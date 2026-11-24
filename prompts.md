@@ -316,3 +316,164 @@ The app is built into a separate copy, so the long run won't block me from compi
 ...
 
 The Claude API option is ready if you get a key: `--provider anthropic`. That's the most likely fix for judgment quality, but it isn't something I can test here.
+
+USER:
+
+Your prompts and AI-tool transcripts from the build. This is important — paste your
+
+Claude/Cursor/ChatGPT conversation exports, or copy the key prompts into a prompts.md file.
+
+We want to see how you actually worked with the model, not just the output.
+
+create it like a copy and paste thing don't beautify it
+
+CLAUDE:
+
+I've created [prompts.md](prompts.md) as a plain copy-paste of this session: 1,476 lines, no reformatting.
+
+...
+
+The session isn't over: anything we do from here (NOTES.md, README, a verification step) won't be in prompts.md. When you're done, ask me to regenerate it and it will cover everything up to the end.
+
+
+USER:
+
+I don't want it this big I just want what messages I sent and starting and ending 1 line of your reply
+
+CLAUDE:
+
+I've cut [prompts.md](prompts.md) down from 1,476 lines to 191 (12 KB). It now has your 28 messages, word for word, each followed by the first and last line of my reply with `...` in between. Tool calls and everything else are gone.
+
+...
+
+It's built from the export I took before your last two messages, so it ends at your "create it like a copy and paste thing" request, with no reply under it. Ask me to regenerate it at the end of the build and it'll include everything up to then. The raw export zip in Downloads (`session-export-1795561007699.zip`) still has your email and personal Claude settings in it, so don't submit that file. You may want to delete it.
+
+
+USER:
+
+I have edited the prompt.md to remove some of the messages claude is coming in same line fix that
+
+CLAUDE:
+
+I've fixed [prompts.md](prompts.md), keeping your edits. The problem was Markdown: lines without a blank line between them get merged into one paragraph, so in the preview, "CLAUDE:" and the reply ran on after your message on the same line. I added a blank line after every line, plus an extra one between turns, so each label, message and reply line now shows on its own line. No text was changed or removed.
+
+...
+
+In the raw file this looks more spaced out, but it renders correctly in the preview and on GitHub. I saved a copy of your edited version before the change, in case you want to go back to it.
+
+
+USER:
+
+now write the NOTES.md write them like I have written them keep it short
+
+CLAUDE:
+
+That's 470 words, too long for the brief's half-page limit. Trimming it down:
+
+...
+
+Every number in it comes from the runs we did, so you can say it out loud in the Loom.
+
+
+USER:
+
+Write the README
+
+CLAUDE:
+
+`./gradlew` works: it downloaded Gradle 9.7.1, so the earlier failure was only the URL check. I'm turning that check back on, since the URL is valid.
+
+...
+
+3. **Regenerate prompts.md at the end**, so it includes the NOTES and README work.
+
+
+USER:
+
+in readme add 2 option one with ollama and other with api key
+
+
+USER:
+
+[Request interrupted by user]
+
+
+USER:
+
+revert this
+
+CLAUDE:
+
+I've reverted [README.md](README.md) to exactly how it was before the two-options change. Setup, Run and "Using a different model" are back as separate sections, and nothing else changed.
+
+...
+
+If you still want the two options, tell me how you'd like it laid out, for example shorter or as a table, and I'll redo it that way.
+
+
+USER:
+
+commit and push and also make this repo public and give me the link
+
+
+USER:
+
+I'll create it on github.com
+
+CLAUDE:
+
+The project is committed locally on branch `main`: one commit, `c059fd4`, with 46 files covering the code, tests, README, NOTES.md, prompts.md, samples, fixtures and the Gradle wrapper.
+
+...
+
+Then I'll add it as the remote, push `main` with your saved GitHub login, and give you the link.
+
+
+USER:
+
+Repo is created
+
+CLAUDE:
+
+Found it: `khushkhandelwal05/research-agent`, and it's empty. Pushing:
+
+...
+
+Each of those would be a small follow-up commit.
+
+
+USER:
+
+remove claude as a author
+
+CLAUDE:
+
+I removed the `Co-Authored-By: Claude` line from the commit. You were already the author, so that line was the only place Claude appeared.
+
+...
+
+I've also noted not to add a Claude line to any future commits in this repo.
+
+
+USER:
+
+check the s3 folder pdf have we covered everything that was required if yes give me video script on how to run it and how it works which file to show when and also check 
+
+What We're Evaluating section
+
+CLAUDE:
+
+The quote links work: opening the J.P. Morgan link scrolled the page straight to the "All in all, we find little association…" paragraph. Writing up the check and the script now.
+
+...
+
+**Tip:** use the latest run (`runs/20261125-043630`), which the script matches. Don't run it live from scratch, because it takes 25 minutes.
+
+
+USER:
+
+Yes, fix all three
+
+CLAUDE:
+
+The heading now uses the PDF's wording ("Outlier claims (only one source makes them)"), the tests pass, and the latest brief is re-rendered. Next, the sample output:

@@ -34,6 +34,8 @@ Output goes to `runs/<timestamp>/`:
 
 The URL file has one URL (or local `.html` file) per line; lines starting with `#` are ignored.
 
+**Don't want to wait?** A finished run on the 5 sample links (qwen3:14b) is in [`examples/ai-and-jobs/05-brief.md`](examples/ai-and-jobs/05-brief.md). The fetched page text (`01-fetch.json`, `raw/`) is left out because it is full copies of the articles.
+
 ## Broken pages
 
 To see how failures are handled (404, unknown host, bad URL, JS-only page, paywall, bot check, URL with junk at the end):

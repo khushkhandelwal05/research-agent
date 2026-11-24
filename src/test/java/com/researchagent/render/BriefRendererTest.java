@@ -28,7 +28,7 @@ class BriefRendererTest {
         String md = new BriefRenderer().render(brief(), "ollama:qwen3:14b", "2026-11-25 10:00");
 
         for (String heading : List.of("# Research brief: AI and jobs", "## At a glance", "## Where sources agree",
-                "## Where sources disagree", "## Claims only one source makes", "## What no source addresses",
+                "## Where sources disagree", "## Outlier claims (only one source makes them)", "## What no source addresses",
                 "## Evidence matrix", "## Sources", "## Limitations and method")) {
             assertTrue(md.contains(heading), "missing " + heading);
         }

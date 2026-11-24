@@ -55,7 +55,7 @@ public final class BriefRenderer {
         md.append("## At a glance\n\n");
         md.append("- **").append(b.consensusClaims().size()).append(" consensus claims**: several sources take the same side.\n");
         md.append("- **").append(b.contradictedClaims().size()).append(" contradictions**: sources take opposite sides.\n");
-        md.append("- **").append(singlesOnStatements).append(" single-source claims** on the topic statements, plus ")
+        md.append("- **").append(singlesOnStatements).append(" outlier claims** (only one source) on the topic statements, plus ")
                 .append(b.singleSourceClaims().size() - singlesOnStatements).append(" other points only one source makes.\n");
         md.append("- **").append(b.unaddressedClaims().size()).append(" unaddressed**: statements no source takes a position on.\n");
         if (!b.contradictedClaims().isEmpty()) {
@@ -97,7 +97,7 @@ public final class BriefRenderer {
     }
 
     private void singleSource(StringBuilder md, Brief b, Map<String, SourceSummary> sources) {
-        md.append("## Claims only one source makes\n\n");
+        md.append("## Outlier claims (only one source makes them)\n\n");
         List<SingleSourceClaim> onStatements = b.singleSourceClaims().stream().filter(c -> c.statementId() != null).toList();
         List<SingleSourceClaim> other = b.singleSourceClaims().stream().filter(c -> c.statementId() == null).toList();
         if (onStatements.isEmpty() && other.isEmpty()) {

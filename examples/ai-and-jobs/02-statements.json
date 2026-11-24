@@ -1,0 +1,41 @@
+[ {
+  "id" : "T1",
+  "text" : "AI is already causing net job losses in some industries.",
+  "whyItMatters" : "Understanding current job displacement helps workers and policymakers prepare for ongoing changes."
+}, {
+  "id" : "T2",
+  "text" : "AI has not significantly changed overall employment levels yet.",
+  "whyItMatters" : "This view suggests that the full impact of AI on jobs may still be years away."
+}, {
+  "id" : "T3",
+  "text" : "AI will lead to massive job displacement in the next decade.",
+  "whyItMatters" : "This projection is critical for long-term workforce planning and education strategies."
+}, {
+  "id" : "T4",
+  "text" : "AI will create more jobs than it destroys over time.",
+  "whyItMatters" : "This optimistic view informs policies that encourage AI adoption and innovation."
+}, {
+  "id" : "T5",
+  "text" : "Young workers are more likely to lose jobs due to AI.",
+  "whyItMatters" : "This highlights the need for targeted support and retraining for younger generations."
+}, {
+  "id" : "T6",
+  "text" : "Low-skilled workers are most vulnerable to AI-driven job loss.",
+  "whyItMatters" : "This underscores the importance of upskilling and education for those with fewer qualifications."
+}, {
+  "id" : "T7",
+  "text" : "Office and administrative jobs are being replaced by AI at a high rate.",
+  "whyItMatters" : "This points to specific sectors where job loss is concentrated and where action is needed."
+}, {
+  "id" : "T8",
+  "text" : "AI is transforming the healthcare sector more than any other industry.",
+  "whyItMatters" : "This indicates where new opportunities and challenges may arise for workers and employers."
+}, {
+  "id" : "T9",
+  "text" : "Reskilling programs can help workers adapt to AI-driven changes.",
+  "whyItMatters" : "This offers a practical solution for mitigating job loss and supporting workforce transitions."
+}, {
+  "id" : "T10",
+  "text" : "Government policies can reduce AI's negative impact on employment.",
+  "whyItMatters" : "This shows how regulation and planning can shape the future of work in a more equitable way."
+} ]
