@@ -1,0 +1,16 @@
+# Copy to agent.properties to change the model. Command-line flags (--provider, --model, ...) override this file.
+# Never put an API key in this file: export it in your shell and name the variable in api_key_env.
+
+# ---- Local model via Ollama (default) -------------------------------------------------
+# Any model you have pulled works, e.g. qwen3:14b (default), qwen2.5:7b, llama3.1:8b.
+provider=ollama
+model=qwen3:14b
+base_url=http://localhost:11434
+
+# ---- Claude via the Anthropic API ----------------------------------------------------
+# 1. export ANTHROPIC_API_KEY=...   (or any variable name you set in api_key_env)
+# 2. uncomment these lines (and comment out the Ollama ones above)
+#provider=anthropic
+#model=claude-opus-5-5
+#api_key_env=ANTHROPIC_API_KEY
+#effort=medium

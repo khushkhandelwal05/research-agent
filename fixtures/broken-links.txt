@@ -1,0 +1,8 @@
+# Deliberately broken inputs to exercise failure handling
+https://www.brookings.edu/articles/this-page-does-not-exist-xyz/
+https://no-such-host-for-testing.invalid/article
+https://gloat.com/blog/ai-labor-market/---
+not a url at all
+fixtures/js-shell.html
+fixtures/paywall.html
+fixtures/captcha.html
